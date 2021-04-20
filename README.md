@@ -16,6 +16,12 @@
 
 - [クイック スタート:Azure DevOps Starter を使用して .NET 用 CI/CD パイプラインを作成する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/devops-project/azure-devops-project-aspnet-core)
 
+※DevOps Starterを設定するための既定のオプションがGitHubとなっているため、Azure DevOpsに変更する。
+
+![starter-settings-01.png](./images/starter-settings-01.png)
+
+![starter-settings-02.png](./images/starter-settings-02.png)
+
 ※「Azure DevOps と Azure サブスクリプションを構成する」までを行う。
 
 ![01.png](./images/01.png)
