@@ -33,7 +33,7 @@
 ## 独自のプロジェクトの作成
 
 新たに下記の構成で Azure DevOps Starter リソースを作成する。  
-※先述の手順で GitHub から Azure DevOps に変更していなければ Bring your own code が選択できないため注意
+※[先述の手順](#Azure-DevOps-Starter-リソースの作成)と同様に GitHub から Azure DevOps に変更したうえで Bring your own code を選択
 
 ![03-01.png](./images/03-01.png)
 
