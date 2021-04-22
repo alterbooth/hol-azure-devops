@@ -143,7 +143,7 @@ Repos にアクセスし、下記の Github リポジトリをインポートす
 
 Task を Active に動かす。
 
-Pipelines > Builds にアクセスし、 ASP.NET Core のビルドパイプラインを作成する。
+Pipelines > Pipelines にアクセスし、 ASP.NET Core のビルドパイプラインを作成する。
 
 1. [New pipeline] をクリックする
 2. [Use the classic editor] をクリックする
