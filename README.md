@@ -150,7 +150,7 @@ Pipelines > Pipelines にアクセスし、 ASP.NET Core のビルドパイプ�
 3. インポートしたリポジトリをソースに指定する
 4. テンプレートは選ばず [Empty job] をクリックする
 5. 下記のタスクを追加する
-    - dotnet restore
+    - dotnet restore（.NET Coreを追加し、Commandをrestoreへ切替え）
         - Path to project : `RazorPagesMovie/*.csproj`
     - dotnet build
         - Path to project : `RazorPagesMovie/*.csproj`
