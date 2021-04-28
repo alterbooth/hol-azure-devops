@@ -13,10 +13,9 @@
 
 下記のドキュメントを参考に Azure DevOps Starter リソースを作成する。
 入力項目はユニークである必要があるためチェックマークがつく内容を入力する必要がある。  
+**※「Azure DevOps と Azure サブスクリプションを構成する」までを行う。**  
 
 - [クイック スタート:Azure DevOps Starter を使用して .NET 用 CI/CD パイプラインを作成する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/devops-project/azure-devops-project-aspnet-core)
-
-**※「Azure DevOps と Azure サブスクリプションを構成する」までを行う。**
 
 ![01.png](./images/01.png)
 
