@@ -13,20 +13,19 @@
 
 下記のドキュメントを参考に Azure DevOps Starter リソースを作成する。
 入力項目はユニークである必要があるためチェックマークがつく内容を入力する必要がある。  
+**※「Azure DevOps と Azure サブスクリプションを構成する」まで進めたら、本ハンズオンドキュメントに戻る。**  
 
 - [クイック スタート:Azure DevOps Starter を使用して .NET 用 CI/CD パイプラインを作成する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/devops-project/azure-devops-project-aspnet-core)
+
+![01.png](./images/01.png)
+
+![02.png](./images/02.png)
 
 ※DevOps Starter を設定するための既定のオプションが GitHub となっているため、 Azure DevOps に変更する。
 
 ![starter-settings-01.png](./images/starter-settings-01.png)
 
 ![starter-settings-02.png](./images/starter-settings-02.png)
-
-※「Azure DevOps と Azure サブスクリプションを構成する」までを行う。
-
-![01.png](./images/01.png)
-
-![02.png](./images/02.png)
 
 作成された Azure DevOps Starter リソースでは、サンプルのソースコードを用いた各種パイプラインや Web サーバーが構築されるため、 Web ページにアクセスし表示を確認する。
 
@@ -143,14 +142,14 @@ Repos にアクセスし、下記の Github リポジトリをインポートす
 
 Task を Active に動かす。
 
-Pipelines > Builds にアクセスし、 ASP.NET Core のビルドパイプラインを作成する。
+Pipelines > Pipelines にアクセスし、 ASP.NET Core のビルドパイプラインを作成する。
 
 1. [New pipeline] をクリックする
 2. [Use the classic editor] をクリックする
 3. インポートしたリポジトリをソースに指定する
 4. テンプレートは選ばず [Empty job] をクリックする
 5. 下記のタスクを追加する
-    - dotnet restore
+    - dotnet restore（.NET Coreを追加し、Commandをrestoreへ切替え）
         - Path to project : `RazorPagesMovie/*.csproj`
     - dotnet build
         - Path to project : `RazorPagesMovie/*.csproj`
