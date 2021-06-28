@@ -57,6 +57,8 @@
 ![01.png](./images/01.png)
 
 - 上記以外の項目はチェックマークがつく内容を入力すること
+- **事前にOrganizationが作成されている場合**  
+  - 「Azure Devops Organization」は事前に作成したOrganizationを選ぶようにすること
 
 ### 設定の確認
 
