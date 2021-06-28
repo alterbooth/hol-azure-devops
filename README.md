@@ -13,9 +13,11 @@
 
 下記のドキュメントを参考に Azure DevOps Starter リソースを作成する。
 入力項目はユニークである必要があるためチェックマークがつく内容を入力する必要がある。  
-**※「Azure DevOps と Azure サブスクリプションを構成する」まで進めたら、本ハンズオンドキュメントに戻る。**  
+**※「Azure DevOps と Azure サブスクリプションを構成する」まで進めたら、本ハンズオンドキュメントに戻る。**
 
 - [クイック スタート:Azure DevOps Starter を使用して .NET 用 CI/CD パイプラインを作成する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/devops-project/azure-devops-project-aspnet-core)
+- **事前にOrganizationが作成されている場合**
+    - 「Azure Devops Organization」は事前に作成した [Azure Pipelineが無料付与されている](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted) Organizationを選ぶようにすること
 
 ![01.png](./images/01.png)
 
@@ -58,7 +60,7 @@
 
 - 上記以外の項目はチェックマークがつく内容を入力すること
 - **事前にOrganizationが作成されている場合**  
-  - 「Azure Devops Organization」は事前に作成したOrganizationを選ぶようにすること
+  - 「Azure Devops Organization」は事前に作成した [Azure Pipelineが無料付与されている](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted) Organizationを選ぶようにすること
 
 ### 設定の確認
 
