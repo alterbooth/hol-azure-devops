@@ -13,21 +13,24 @@
 
 下記のドキュメントを参考に Azure DevOps Starter リソースを作成する。
 入力項目はユニークである必要があるためチェックマークがつく内容を入力する必要がある。  
-**※「Azure DevOps と Azure サブスクリプションを構成する」まで進めたら、本ハンズオンドキュメントに戻る。**  
+**※「Azure DevOps と Azure サブスクリプションを構成する」まで進めたら、本ハンズオンドキュメントに戻る。**
 
 - [クイック スタート:Azure DevOps Starter を使用して .NET 用 CI/CD パイプラインを作成する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/devops-project/azure-devops-project-aspnet-core)
 
-![01.png](./images/01.png)
-
-![02.png](./images/02.png)
-
-※DevOps Starter を設定するための既定のオプションが GitHub となっているため、 Azure DevOps に変更する。
-
+※DevOps Starter を設定するための既定のオプションが GitHub となっているため、 Azure DevOps に変更する。  
+「Setting up DevOps starter with Github. change setting here」というの文言のhere部分を押す
 ![starter-settings-01.png](./images/starter-settings-01.png)
 
 ![starter-settings-02.png](./images/starter-settings-02.png)
 
+**事前にOrganizationが作成されている場合**
+- 「Azure Devops Organization」は事前に作成した [Azure Pipelineが無料付与されている](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted) Organizationを選ぶようにすること
+-  選択時に「You don't have permissions...」と警告が出た場合、管理者にユーザーアクセス管理者のロールをサブスクリプションに追加するようにお問い合わせください。
+![01.png](./images/01.png)
+
 作成された Azure DevOps Starter リソースでは、サンプルのソースコードを用いた各種パイプラインや Web サーバーが構築されるため、 Web ページにアクセスし表示を確認する。
+![02.png](./images/02.png)
+
 
 ## 独自のプロジェクトの作成
 
@@ -57,6 +60,8 @@
 ![01.png](./images/01.png)
 
 - 上記以外の項目はチェックマークがつく内容を入力すること
+- **事前にOrganizationが作成されている場合**  
+  - 「Azure Devops Organization」は事前に作成した [Azure Pipelineが無料付与されている](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted) Organizationを選ぶようにすること
 
 ### 設定の確認
 
@@ -81,13 +86,15 @@ Boards > Work items > New Work Item > Feature を作成する。
 
 ![Add Feature](images/add-feature.png)
 
-- Title : `Azure DevOps ハンズオン`
+- Title : `Azure DevOps ハンズオン`　
 - Assign : 自分
 - Iteration : Iteration 1
 
 ### User Story の作成
 
-Boards から先ほど作成した Feature を開く。
+Boards > Boards から先ほど作成した Feature を開く。
+
+Storiesが表示されている場合、右上の Stories を Feature に変更する。
 
 ![Add User Story](images/add-user-story.png)
 
@@ -147,7 +154,7 @@ Pipelines > Pipelines にアクセスし、 ASP.NET Core のビルドパイプ�
 1. [New pipeline] をクリックする
 2. [Use the classic editor] をクリックする
 3. インポートしたリポジトリをソースに指定する
-4. テンプレートは選ばず [Empty job] をクリックする
+4. テンプレートは選ばず 「Select a template」の下にある [Empty job] をクリックする
 5. 下記のタスクを追加する
     - dotnet restore（.NET Coreを追加し、Commandをrestoreへ切替え）
         - Path to project : `RazorPagesMovie/*.csproj`
@@ -206,7 +213,7 @@ Task 2 にて作成したパイプラインを変更して、単体テストの�
 
 Task を Active に動かす。
 
-Task を開き [Create a branch] からブランチを作成する。
+Task を開き、画面右のDevelopmentの下にある [Create a branch] からブランチを作成する。
 
 作成したブランチにてファイルを修正し、変更をコミットする。  
 このときコミットメッセージに `#<Task ID>` を含め [Work items to link] にて Task 4 を指定すること。
@@ -294,7 +301,7 @@ Azure ポータルに戻り、Azure DevOps Starter リソースの \[App Service
 
 追加したスロットの Web ページにアクセスし表示を確認する。
 
-![Staging Web Site](images/webapp-stg-slot-web.png)
+![Staging Web Site](images/webapp-stg-slot-web-empty.png)
 
 **スロットにデプロイする**
 
