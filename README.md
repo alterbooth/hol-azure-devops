@@ -26,11 +26,13 @@
 **事前にOrganizationが作成されている場合**
 - 「Azure Devops Organization」は事前に作成した [Azure Pipelineが無料付与されている](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&tabs=ms-hosted) Organizationを選ぶようにすること
 -  選択時に「You don't have permissions...」と警告が出た場合、管理者にユーザーアクセス管理者のロールをサブスクリプションに追加するようにお問い合わせください。
+
+※Additional settingsについて
+- ハンズオン後半にS1以上でなければ動作しない[手順](#task-6-:-blue-green-デプロイメント)があるため、Pricing Tier は「S1」を選ぶようにする
 ![01.png](./images/01.png)
 
 作成された Azure DevOps Starter リソースでは、サンプルのソースコードを用いた各種パイプラインや Web サーバーが構築されるため、 Web ページにアクセスし表示を確認する。
 ![02.png](./images/02.png)
-
 
 ## 独自のプロジェクトの作成
 
