@@ -28,7 +28,7 @@
 -  選択時に「You don't have permissions...」と警告が出た場合、管理者にユーザーアクセス管理者のロールをサブスクリプションに追加するようにお問い合わせください。
 
 ※Additional settingsについて
-- ハンズオン後半にS1以上でなければ動作しない[手順](#task-6-:-blue-green-デプロイメント)があるため、Pricing Tier は「S1」を選ぶようにする
+- ハンズオン後半にS1以上でなければ動作しない[手順](#task-6--blue-green-デプロイメント)があるため、Pricing Tier は「S1」を選ぶようにする
 ![01.png](./images/01.png)
 
 作成された Azure DevOps Starter リソースでは、サンプルのソースコードを用いた各種パイプラインや Web サーバーが構築されるため、 Web ページにアクセスし表示を確認する。
